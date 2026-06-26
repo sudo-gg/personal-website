@@ -1,51 +1,35 @@
+@import "tailwindcss";
+
 body {
-  margin: 0;
   font-family: Georgia, serif;
-  color: #111;
-  background: #f7f7f5;
+  color: #1c1917;
+  background: #fafaf9;
 }
-
-.wrap {
-  max-width: 760px;
-  margin: 0 auto;
-  padding: 64px 24px;
+ 
+/* Prose styles for post bodies (no Tailwind @apply needed) */
+.prose p {
+  font-size: 1rem;
+  line-height: 1.75;
+  color: #44403c;
+  margin: 0 0 1.25rem;
 }
-
-h1 {
-  font-size: 64px;
-  margin: 0 0 24px;
+ 
+.prose h2 {
+  font-size: 1.25rem;
   font-weight: 400;
+  color: #1c1917;
+  margin: 2rem 0 0.75rem;
 }
-
-.lead {
-  font-size: 20px;
-  line-height: 1.7;
-  max-width: 34rem;
+ 
+.prose code {
+  font-size: 0.85em;
+  background: #f5f5f4;
+  padding: 2px 5px;
+  border-radius: 3px;
 }
-
-.links a {
-  margin-right: 18px;
-  color: #111;
+ 
+.prose em {
+  font-style: italic;
+  color: #57534e;
 }
-
-.post img,
-iframe {
-  width: 100%;
-  margin: 16px 0;
-  border: 1px solid #ddd;
-  background: white;
-}
-
-iframe {
-  height: 420px;
-}
-
-button {
-  padding: 10px 14px;
-  border: 1px solid #999;
-  background: #fff;
-}
-
-ul {
-  padding-left: 18px;
-}
+ 

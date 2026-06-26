@@ -1,6 +1,6 @@
-const modules = import.meta.glob("./*.jsx");
+const modules = import.meta.glob("./*.jsx", { eager: true });
 
-export const posts = Object.entries(modules, { eager: true })
+export const posts = Object.entries(modules)
   .map(([path, module]) => {
     const slug =
       module.metadata?.slug || path.replace("./", "").replace(".jsx", "");

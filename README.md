@@ -1,0 +1,1 @@
+A simple React and vite website to host my math blog on.
